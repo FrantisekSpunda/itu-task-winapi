@@ -216,8 +216,8 @@ void paintPosition(HWND hWnd, HDC hDC, PAINTSTRUCT ps)
 void paintObject(HWND hWnd, HDC hDC, PAINTSTRUCT ps, int posX, int posY, POINT cursorPosition)
 {
   // Nastavení barvy pro štětec a pero
-  HBRUSH hBrush = CreateSolidBrush(squareColor);       // Použijeme squareColor
-  HPEN hPen = CreatePen(PS_SOLID, 10, RGB(0, 0, 255)); // Modré pero, šířka 3
+  HBRUSH hBrush = CreateSolidBrush(squareColor);      // Použijeme squareColor
+  HPEN hPen = CreatePen(PS_SOLID, 1, RGB(0, 0, 255)); // Modré pero, šířka 3
   HGDIOBJ oldBrush = SelectObject(hDC, hBrush);
   HGDIOBJ oldPen = SelectObject(hDC, hPen);
 

@@ -179,7 +179,7 @@ LRESULT CALLBACK MainWndProc(
     // paintObject2(hWnd, hDC, ps, posX, posY, cursorPosition);
     // paintObject3(hWnd, hDC, ps, posX, posY, cursorPosition);
     EndPaint(hWnd, &ps);
-    DeleteDC(hDC);
+    // DeleteDC(hDC);
     break;
 
     //
